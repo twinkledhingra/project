@@ -1,0 +1,313 @@
+<div class="mymain">
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Derrida</span>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                </button>
+                <div class="user-avatar">
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgDWEle1fibHESzSgpUFZkFwf7AuUlSwvzzIMSwcFweZ9F7QJHpssa5-cEvhVcr4ZFH0ft3xBu9dLAfzEt1RsuMVwTl2VjN47fMWOrEmQ-QhJW5YZGbZQAkM8sspnPVnFO7J7oM8suSe1gCq1qqSY4zwRxPzyVJ2iT_aWODkeP8249zFdhgbPXOUEfUpsA" alt="User">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Messages List View -->
+    <div class="messages-view active" id="messages-list">
+        <main class="main-content">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <input type="text" placeholder="Search conversations..." class="search-input">
+                </div>
+            </div>
+
+            <!-- Message Threads -->
+            <div class="conversations-list">
+                <div class="conversation-item active" onclick="openChat('sarah')">
+                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sarah Johnson">
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <h4>Sarah Johnson</h4>
+                            <span class="message-time">2m ago</span>
+                        </div>
+                        <p class="last-message">Hi! I've reviewed the latest designs and they look amazing. Can we discuss the checkout flow?</p>
+                        <div class="conversation-footer">
+                            <span class="project-name">E-commerce Platform</span>
+                            <div class="conversation-badges">
+                                <span class="unread-count">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item" onclick="openChat('alex')">
+                    <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Alex Thompson">
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <h4>Alex Thompson</h4>
+                            <span class="message-time">1h ago</span>
+                        </div>
+                        <p class="last-message">The mockups are perfect! Let's move forward with the development phase.</p>
+                        <div class="conversation-footer">
+                            <span class="project-name">Fitness App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item" onclick="openChat('maria')">
+                    <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Maria Garcia">
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <h4>Maria Garcia</h4>
+                            <span class="message-time">3h ago</span>
+                        </div>
+                        <p class="last-message">Thanks for the quick turnaround on the logo concepts. I love design #3!</p>
+                        <div class="conversation-footer">
+                            <span class="project-name">Brand Identity</span>
+                            <div class="conversation-badges">
+                                <span class="priority-badge">Urgent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item" onclick="openChat('emma')">
+                    <img src="https://images.pexels.com/photos/1462980/pexels-photo-1462980.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Emma Wilson">
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <h4>Emma Wilson</h4>
+                            <span class="message-time">1d ago</span>
+                        </div>
+                        <p class="last-message">Thank you for the excellent work on the e-learning platform. The UI is fantastic!</p>
+                        <div class="conversation-footer">
+                            <span class="project-name">E-learning Platform</span>
+                            <div class="conversation-badges">
+                                <span class="completed-badge">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item" onclick="openChat('john')">
+                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="John Smith">
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <h4>John Smith</h4>
+                            <span class="message-time">2d ago</span>
+                        </div>
+                        <p class="last-message">I'm interested in your web design services. Can we schedule a call?</p>
+                        <div class="conversation-footer">
+                            <span class="project-name">Corporate Website</span>
+                            <div class="conversation-badges">
+                                <span class="pending-badge">Pending</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Chat View -->
+    <div class="chat-view" id="chat-view">
+        <header class="chat-header">
+            <button class="back-btn" onclick="backToMessages()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            <div class="chat-client-info">
+                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sarah Johnson" id="chat-avatar">
+                <div>
+                    <h3 id="chat-name">Sarah Johnson</h3>
+                    <span class="online-status">Online now</span>
+                </div>
+            </div>
+            <button class="icon-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="1"/>
+                    <circle cx="19" cy="12" r="1"/>
+                    <circle cx="5" cy="12" r="1"/>
+                </svg>
+            </button>
+        </header>
+
+        <div class="chat-messages" id="chat-messages">
+            <div class="message-group">
+                <div class="message received">
+                    <p>Hi Nicollo! I hope you're doing well. I wanted to discuss the e-commerce platform design we're working on.</p>
+                    <span class="message-timestamp">Today 2:30 PM</span>
+                </div>
+                <div class="message received">
+                    <p>I've reviewed the latest designs and they look amazing! The user flow is really intuitive.</p>
+                    <span class="message-timestamp">Today 2:31 PM</span>
+                </div>
+            </div>
+
+            <div class="message-group">
+                <div class="message sent">
+                    <p>Thank you so much! I'm glad you like the direction we're heading. I put a lot of thought into the user experience.</p>
+                    <span class="message-timestamp">Today 2:35 PM</span>
+                </div>
+                <div class="message sent">
+                    <p>I wanted to get your feedback on the checkout process. Should we add a guest checkout option?</p>
+                    <span class="message-timestamp">Today 2:36 PM</span>
+                </div>
+            </div>
+
+            <div class="message-group">
+                <div class="message received">
+                    <p>Yes, definitely! Guest checkout is essential for reducing cart abandonment. Can we also add social login options?</p>
+                    <span class="message-timestamp">Today 2:40 PM</span>
+                </div>
+            </div>
+
+            <div class="message-group">
+                <div class="message sent">
+                    <p>Absolutely! I'll add Google and Facebook login options. Also, should we include Apple Pay and Google Pay for mobile users?</p>
+                    <span class="message-timestamp">Today 2:42 PM</span>
+                </div>
+            </div>
+
+            <div class="message-group">
+                <div class="message received">
+                    <p>Perfect! That would be great for mobile conversions. When do you think you can have the updated designs ready?</p>
+                    <span class="message-timestamp">Today 2:45 PM</span>
+                </div>
+            </div>
+
+            <div class="typing-indicator">
+                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100" alt="You">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="chat-input-wrapper">
+                <button class="attachment-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66L9.64 16.2a2 2 0 0 1-2.83-2.83l8.49-8.49"/>
+                    </svg>
+                </button>
+                <input type="text" placeholder="Type a message..." class="message-input">
+                <button class="send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"/>
+                        <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+      <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a routerLink="/dashboard/home" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9,22 9,12 15,12 15,22"/>
+            </svg>
+            <span>Home</span>
+        </a>
+        <a routerLink="/dashboard/orders" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="9"/>
+            </svg>
+            <span>Orders</span>
+        </a>
+        <a routerLink="/dashboard/message" class="nav-item active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>Messages</span>
+        </a>
+        <a routerLink="/dashboard/profile" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span>Profile</span>
+        </a>
+    </nav>
+
+    <script>
+        function openChat(clientId) {
+            document.getElementById('messages-list').classList.remove('active');
+            document.getElementById('chat-view').classList.add('active');
+            
+            // Update chat header based on client
+            const clients = {
+                sarah: {
+                    name: 'Sarah Johnson',
+                    avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100'
+                },
+                alex: {
+                    name: 'Alex Thompson',
+                    avatar: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=100'
+                },
+                maria: {
+                    name: 'Maria Garcia',
+                    avatar: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100'
+                },
+                emma: {
+                    name: 'Emma Wilson',
+                    avatar: 'https://images.pexels.com/photos/1462980/pexels-photo-1462980.jpeg?auto=compress&cs=tinysrgb&w=100'
+                },
+                john: {
+                    name: 'John Smith',
+                    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100'
+                }
+            };
+            
+            if (clients[clientId]) {
+                document.getElementById('chat-name').textContent = clients[clientId].name;
+                document.getElementById('chat-avatar').src = clients[clientId].avatar;
+            }
+        }
+
+        function backToMessages() {
+            document.getElementById('chat-view').classList.remove('active');
+            document.getElementById('messages-list').classList.add('active');
+        }
+
+        // Message input functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const messageInput = document.querySelector('.message-input');
+            const sendBtn = document.querySelector('.send-btn');
+
+            function sendMessage() {
+                const message = messageInput.value.trim();
+                if (message) {
+                    // Add message to chat (simplified for demo)
+                    messageInput.value = '';
+                }
+            }
+
+            sendBtn.addEventListener('click', sendMessage);
+            messageInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+        });
+    </script>
+</div>

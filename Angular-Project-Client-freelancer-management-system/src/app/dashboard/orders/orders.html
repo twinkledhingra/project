@@ -1,0 +1,374 @@
+<div class="mymain">
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Derrida</span>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn filter-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                    </svg>
+                </button>
+                <div class="user-avatar">
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgDWEle1fibHESzSgpUFZkFwf7AuUlSwvzzIMSwcFweZ9F7QJHpssa5-cEvhVcr4ZFH0ft3xBu9dLAfzEt1RsuMVwTl2VjN47fMWOrEmQ-QhJW5YZGbZQAkM8sspnPVnFO7J7oM8suSe1gCq1qqSY4zwRxPzyVJ2iT_aWODkeP8249zFdhgbPXOUEfUpsA" alt="User">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>My Orders</h1>
+            <p>Manage your ongoing and completed projects</p>
+        </section>
+
+        <!-- Order Status Tabs -->
+        <div class="status-tabs">
+            <button class="tab-btn active" data-status="active">Active (5)</button>
+            <button class="tab-btn" data-status="pending">Pending (2)</button>
+            <button class="tab-btn" data-status="completed">Completed (12)</button>
+        </div>
+
+        <!-- Orders List -->
+        <div class="orders-container">
+            <div class="tab-content active" id="active-orders">
+                <div class="order-card urgent">
+                    <div class="order-header">
+                        <div class="client-info">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sarah Johnson">
+                            <div>
+                                <h3>E-commerce Platform UI/UX</h3>
+                                <span class="client-name">Sarah Johnson</span>
+                            </div>
+                        </div>
+                        <div class="order-status urgent">
+                            <span>Urgent</span>
+                        </div>
+                    </div>
+
+                    <div class="order-details">
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span>Progress</span>
+                                <span class="progress-percent">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="order-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Price</span>
+                                <span class="meta-value price">$2,500</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Deadline</span>
+                                <span class="meta-value deadline urgent">2 days left</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Started</span>
+                                <span class="meta-value">Jan 15, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-actions">
+                        <button class="action-btn message-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            Message
+                        </button>
+                        <button class="action-btn deliver-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="7.5,4.21 12,6.81 16.5,4.21"/>
+                                <polyline points="7.5,19.79 7.5,14.6 3,12"/>
+                                <polyline points="21,12 16.5,14.6 16.5,19.79"/>
+                            </svg>
+                            Deliver Work
+                        </button>
+                    </div>
+                </div>
+
+                <div class="order-card">
+                    <div class="order-header">
+                        <div class="client-info">
+                            <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Alex Thompson">
+                            <div>
+                                <h3>Fitness Tracking Mobile App</h3>
+                                <span class="client-name">Alex Thompson</span>
+                            </div>
+                        </div>
+                        <div class="order-status active">
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="order-details">
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span>Progress</span>
+                                <span class="progress-percent">45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                        </div>
+
+                        <div class="order-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Price</span>
+                                <span class="meta-value price">$3,200</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Deadline</span>
+                                <span class="meta-value deadline">1 week left</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Started</span>
+                                <span class="meta-value">Jan 10, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-actions">
+                        <button class="action-btn message-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            Message
+                        </button>
+                        <button class="action-btn upload-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="17,8 12,3 7,8"/>
+                                <line x1="12" y1="3" x2="12" y2="15"/>
+                            </svg>
+                            Upload Files
+                        </button>
+                    </div>
+                </div>
+
+                <div class="order-card">
+                    <div class="order-header">
+                        <div class="client-info">
+                            <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Maria Garcia">
+                            <div>
+                                <h3>Brand Identity Design</h3>
+                                <span class="client-name">Maria Garcia</span>
+                            </div>
+                        </div>
+                        <div class="order-status active">
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="order-details">
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span>Progress</span>
+                                <span class="progress-percent">60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                        <div class="order-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Price</span>
+                                <span class="meta-value price">$1,800</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Deadline</span>
+                                <span class="meta-value deadline">5 days left</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Started</span>
+                                <span class="meta-value">Jan 8, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-actions">
+                        <button class="action-btn message-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            Message
+                        </button>
+                        <button class="action-btn revisions-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 4 23 10 17 10"/>
+                                <polyline points="1 20 1 14 7 14"/>
+                                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+                            </svg>
+                            Request Revision
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="pending-orders">
+                <div class="order-card pending">
+                    <div class="order-header">
+                        <div class="client-info">
+                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="John Smith">
+                            <div>
+                                <h3>Corporate Website Redesign</h3>
+                                <span class="client-name">John Smith</span>
+                            </div>
+                        </div>
+                        <div class="order-status pending">
+                            <span>Pending Approval</span>
+                        </div>
+                    </div>
+
+                    <div class="order-details">
+                        <div class="order-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Price</span>
+                                <span class="meta-value price">$4,200</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Submitted</span>
+                                <span class="meta-value">2 hours ago</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Response Time</span>
+                                <span class="meta-value">24-48 hours</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-actions">
+                        <button class="action-btn message-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            Message
+                        </button>
+                        <button class="action-btn withdraw-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="15" y1="9" x2="9" y2="15"/>
+                                <line x1="9" y1="9" x2="15" y2="15"/>
+                            </svg>
+                            Withdraw
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="completed-orders">
+                <div class="order-card completed">
+                    <div class="order-header">
+                        <div class="client-info">
+                            <img src="https://images.pexels.com/photos/1462980/pexels-photo-1462980.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Emma Wilson">
+                            <div>
+                                <h3>E-learning Platform UI</h3>
+                                <span class="client-name">Emma Wilson</span>
+                            </div>
+                        </div>
+                        <div class="order-status completed">
+                            <span>Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="order-details">
+                        <div class="order-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Final Price</span>
+                                <span class="meta-value price">$2,800</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Completed</span>
+                                <span class="meta-value">Dec 28, 2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Rating</span>
+                                <span class="meta-value rating">★★★★★ 5.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-actions">
+                        <button class="action-btn review-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                            View Details
+                        </button>
+                        <button class="action-btn reorder-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 4 23 10 17 10"/>
+                                <polyline points="1 20 1 14 7 14"/>
+                                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+                            </svg>
+                            Reorder
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a routerLink="/dashboard/home" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9,22 9,12 15,12 15,22"/>
+            </svg>
+            <span>Home</span>
+        </a>
+        <a routerLink="/dashboard/orders" class="nav-item active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="9"/>
+            </svg>
+            <span>Orders</span>
+        </a>
+        <a routerLink="/dashboard/message" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>Messages</span>
+        </a>
+        <a routerLink="/dashboard/profile" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span>Profile</span>
+        </a>
+    </nav>
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                const status = this.getAttribute('data-status');
+                document.getElementById(status + '-orders').classList.add('active');
+            });
+        });
+    </script>
+</div>

@@ -1,0 +1,415 @@
+<div class="mymain">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">FreelanceHub</span>
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Find Talent</a>
+                <a href="#" class="nav-link">Find Work</a>
+                <a href="#" class="nav-link">Categories</a>
+                <a href="#" class="nav-link">Enterprise</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button routerLink="/login" class="btn btn-ghost">Log In</button>
+                <button routerLink="/signup" class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Find the perfect
+                <span class="gradient-text" (click)="changeTitle()">{{title}}</span>
+                services for your business
+            </h1>
+            <p class="hero-subtitle">
+                Connect with world-class freelancers and get your projects done with premium quality and lightning speed
+            </p>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for any service..." class="search-input">
+                <button class="search-btn" routerLink="/signup">
+                    <span>Search</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="popular-searches">
+                <span class="popular-label">Popular:</span>
+                <a href="#" class="popular-tag">Website Design</a>
+                <a href="#" class="popular-tag">Logo Design</a>
+                <a href="#" class="popular-tag">Web Development</a>
+                <a href="#" class="popular-tag">Mobile App</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Explore Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>Programming & Tech</h3>
+                    <p>Custom software solutions</p>
+                    <div class="category-stats">1,234 services</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Graphics & Design</h3>
+                    <p>Visual creativity unleashed</p>
+                    <div class="category-stats">987 services</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">✍️</div>
+                    <h3>Writing & Translation</h3>
+                    <p>Words that make impact</p>
+                    <div class="category-stats">756 services</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">📹</div>
+                    <h3>Video & Animation</h3>
+                    <p>Bring your vision to life</p>
+                    <div class="category-stats">543 services</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">🎵</div>
+                    <h3>Music & Audio</h3>
+                    <p>Sound that resonates</p>
+                    <div class="category-stats">321 services</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">📈</div>
+                    <h3>Business</h3>
+                    <p>Strategic growth solutions</p>
+                    <div class="category-stats">654 services</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="featured-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Services</h2>
+                <button (click)="myfun()" class="btn btn-outline">{{title2}}</button>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Web Development">
+                        <div class="service-badge">Featured</div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-meta">
+                            <div class="freelancer-info">
+                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Freelancer" class="freelancer-avatar">
+                                <span class="freelancer-name">Sarah Chen</span>
+                            </div>
+                            <div class="service-rating">
+                                <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">5.0 (127)</span>
+                            </div>
+                        </div>
+                        <h3 class="service-title">I will create a modern responsive website with React</h3>
+                        <div class="service-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">Starting at $299</span>
+                            <div class="service-actions">
+                                <button class="btn-icon">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Logo Design">
+                        <div class="service-badge pro">Pro</div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-meta">
+                            <div class="freelancer-info">
+                                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Freelancer" class="freelancer-avatar">
+                                <span class="freelancer-name">Marcus Johnson</span>
+                            </div>
+                            <div class="service-rating">
+                                <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">4.9 (243)</span>
+                            </div>
+                        </div>
+                        <h3 class="service-title">I will design a premium logo and brand identity</h3>
+                        <div class="service-tags">
+                            <span class="tag">Logo Design</span>
+                            <span class="tag">Branding</span>
+                            <span class="tag">Vector</span>
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">Starting at $149</span>
+                            <div class="service-actions">
+                                <button class="btn-icon">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mobile App">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-meta">
+                            <div class="freelancer-info">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Freelancer" class="freelancer-avatar">
+                                <span class="freelancer-name">Elena Rodriguez</span>
+                            </div>
+                            <div class="service-rating">
+                                <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">5.0 (89)</span>
+                            </div>
+                        </div>
+                        <h3 class="service-title">I will develop a native mobile app for iOS and Android</h3>
+                        <div class="service-tags">
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">iOS</span>
+                            <span class="tag">Android</span>
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">Starting at $899</span>
+                            <div class="service-actions">
+                                <button class="btn-icon">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Content Writing">
+                        <div class="service-badge new">New</div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-meta">
+                            <div class="freelancer-info">
+                                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Freelancer" class="freelancer-avatar">
+                                <span class="freelancer-name">David Kim</span>
+                            </div>
+                            <div class="service-rating">
+                                <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">4.8 (156)</span>
+                            </div>
+                        </div>
+                        <h3 class="service-title">I will write engaging SEO content and blog posts</h3>
+                        <div class="service-tags">
+                            <span class="tag">Content Writing</span>
+                            <span class="tag">SEO</span>
+                            <span class="tag">Blog</span>
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">Starting at $79</span>
+                            <div class="service-actions">
+                                <button class="btn-icon">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Freelancers
+    <section class="top-freelancers">
+        <div class="container">
+            <h2 class="section-title">Top Freelancers</h2>
+            <div class="freelancers-grid">
+                <div class="freelancer-card">
+                    <div class="freelancer-header">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Freelancer" class="freelancer-image">
+                        <div class="freelancer-badge">Top Rated</div>
+                    </div>
+                    <div class="freelancer-info">
+                        <h3 class="freelancer-name">Sarah Chen</h3>
+                        <p class="freelancer-title">Full-Stack Developer</p>
+                        <div class="freelancer-rating">
+                            <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-text">5.0 (127 reviews)</span>
+                        </div>
+                        <div class="freelancer-skills">
+                            <span class="skill">React</span>
+                            <span class="skill">Node.js</span>
+                            <span class="skill">MongoDB</span>
+                        </div>
+                        <div class="freelancer-stats">
+                            <div class="stat">
+                                <span class="stat-number">127</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">$85</span>
+                                <span class="stat-label">/hour</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full">View Profile</button>
+                </div>
+
+                <div class="freelancer-card">
+                    <div class="freelancer-header">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Freelancer" class="freelancer-image">
+                        <div class="freelancer-badge pro">Pro</div>
+                    </div>
+                    <div class="freelancer-info">
+                        <h3 class="freelancer-name">Marcus Johnson</h3>
+                        <p class="freelancer-title">Brand Designer</p>
+                        <div class="freelancer-rating">
+                            <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-text">4.9 (243 reviews)</span>
+                        </div>
+                        <div class="freelancer-skills">
+                            <span class="skill">Logo Design</span>
+                            <span class="skill">Branding</span>
+                            <span class="skill">Illustrator</span>
+                        </div>
+                        <div class="freelancer-stats">
+                            <div class="stat">
+                                <span class="stat-number">243</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">$65</span>
+                                <span class="stat-label">/hour</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full">View Profile</button>
+                </div>
+
+                <div class="freelancer-card">
+                    <div class="freelancer-header">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Freelancer" class="freelancer-image">
+                        <div class="freelancer-badge">Rising Talent</div>
+                    </div>
+                    <div class="freelancer-info">
+                        <h3 class="freelancer-name">Elena Rodriguez</h3>
+                        <p class="freelancer-title">Mobile App Developer</p>
+                        <div class="freelancer-rating">
+                            <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-text">5.0 (89 reviews)</span>
+                        </div>
+                        <div class="freelancer-skills">
+                            <span class="skill">React Native</span>
+                            <span class="skill">Flutter</span>
+                            <span class="skill">iOS</span>
+                        </div>
+                        <div class="freelancer-stats">
+                            <div class="stat">
+                                <span class="stat-number">89</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">$95</span>
+                                <span class="stat-label">/hour</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to get started?</h2>
+                <p class="cta-subtitle">Join thousands of businesses and freelancers who trust FreelanceHub</p>
+                <div class="cta-actions">
+                    <button class="btn btn-primary btn-lg">Find Talent</button>
+                    <button class="btn btn-outline btn-lg">Start Freelancing</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">FreelanceHub</span>
+                    </div>
+                    <p class="footer-description">
+                        The premium marketplace for freelance services and exceptional talent.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">For Clients</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Find Freelancers</a></li>
+                        <li><a href="#">Post a Project</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">For Freelancers</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Find Work</a></li>
+                        <li><a href="#">Create Profile</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Trust & Safety</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FreelanceHub. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</div>
